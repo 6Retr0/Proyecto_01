@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="¡Bienvenido a tu blog con las ultimas noticias del mundo de las artes marciales!"
+    />
+    <meta
+      name="keywords"
+      content="Lucha, Combate, MMA, Boxeo, Kickboxing, Jiu-jitsu, Karate, Taekwondo, UFC, ONE, Golpe, Derribo, Sumisión, Octágono, Ring, Entrenamiento, Pelea, Campeonato, Técnica, Knockout"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets/favicon/favicon.png"
+      type="image/png"
+    />
+    <title>The Kick</title>
+  </head>
+  <body>
+    <header>
+      <h1>The Kick</h1>
+      <p>
+        ¡Bienvenido a <em>The Kick</em>, tu blog de noticias dedicado al mundo
+        de las artes marciales! Encuentra la información más relevante respecto
+        a resultados y próximos eventos.
+      </p>
+      <p>¡Nada de fútbol, aquí nos gusta el contacto!</p>
+      <!--Barra de Navegación-->
+      <nav>
+        <ul>
+          <li>
+            <a href="#reciente">Reciente</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="reciente">
+        <h2>Noticias Recientes</h2>
+        <ol>
+          <li>
+            <article>
+              <h3>Ilia Topuria se proclama campeón de la UFC</h3>
+              <img
+                src="./Assets/seccion_noticias/iliatpouria.jpeg"
+                alt="Ilia Topuria levantando el cinturón de campeón"
+                title="El campeon, Ilia Topuria elevando por encima de su cabeza el cinturon de la UFC con una bandera Hispanogeorgiana al cuello, rodeado de su equipo y familia"
+              />
+              <p>
+                'El Matador' se convierte en
+                <em
+                  >el primer español en proclamarse campeón del mundo de la
+                  UFC</em
+                >. El peleador hispanogeorgiano Ilia Topuria se ha proclamado
+                este sábado campeón mundial de UFC en la categoría de peso pluma
+                tras arrebatar dicho título al australiano Alexander Volkanovski
+                gracias a un KO en el segundo asalto.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>
+                Cristina Morales luchará el 8 de Marzo por el titulo de Muay
+                Thai
+              </h3>
+              <img
+                src="./Assets/seccion_noticias/cristinamorales.jpeg"
+                alt="Cristina Morales mostrando sus titulos"
+                title="Cristina Morales posando con sus tres cinturones del campeonato ISKA, uno de ENFUSION y otro del IPCC"
+              />
+              <p>
+                La luchadora española se enfrentará el próximo
+                <time datetime="2024-03-08">8 de Marzo</time> a la actual
+                campeona de Muay Thai, la brasileña Allycia Hellen Rodrigues. La
+                lucha se disputará en el Lumpinee Boxing Stadium, en Bangkok,
+                gestionado por la promotora ONE Championship en la categoría de
+                peso <strong>atomweight</strong>.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>
+                Roberto Jiménez arrasa en el Open de Londres de la
+                <abbr title="Federación Internacional de Jiu-Jitsu Brasileño"
+                  >IBJJF</abbr
+                >
+              </h3>
+              <img
+                src="./Assets/seccion_noticias/robertojimenez.jpeg"
+                alt="Roberto Jiménez captado con expresion de concentracion"
+                title="Roberto Jiménez vistiendo un Gi de color negro desatado con el foto desenfocado"
+              />
+              <p>
+                El grappler ecuatoriano y <em>cinturón negro</em> adulto de
+                jiu-jitsu brasileño compitió en las ediciones Gi (con quimono) y
+                No-Gi (sin quimono) del torneo, incluso enfrentándose a todos
+                los participantes en la división absoluta de ambos conjuntos de
+                reglas, colgándose tres medallas de oro y una de plata.
+              </p>
+              <p>
+                Roberto <em>The Natural</em> decidió ingresar al Open de Londres
+                con 94 kilogramos en Gi y 91,5 kg en No-Gi. Ganó medallas de oro
+                en sus dos categorías de peso, superando una competencia
+                particularmente dura en No-GI al derrotar a Tarik Hopstock en la
+                final.
+              </p>
+            </article>
+          </li>
+        </ol>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          ¿Te gustaría trabajar con nosotros o realizar alguna sugerencia?
+          ¡Cuéntanos lo que quieras!
+        </p>
+        <form method="post">
+          <fieldset>
+            <legend>Datos del solicitante</legend>
+            <label for="nombre">¿Como te llamas?</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Nombre Completo*"
+              required
+              maxlength="40"
+            />
+            <label for="correo"
+              >Indicanos donde podemos darte una respuesta:</label
+            >
+            <input
+              type="email"
+              id="correo"
+              placeholder="Correo electrónico*"
+              required
+              maxlength="40"
+            />
+            <label for="telefono"
+              >¿Prefieres que te enviemos un WhatsApp?</label
+            >
+            <input type="number" id="telefono" placeholder="Telefono" />
+          </fieldset>
+          <fieldset>
+            <legend>Informacion de la solicitud</legend>
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" required>
+              <option value="">Elige una opción</option>
+              <option value="trabajo">Trabajo</option>
+              <option value="pregunta">Pregunta</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="colaboracion">Colaboración</option>
+              <option value="otro">Otro</option>
+            </select>
+            <label for="mensaje">Tu mensaje:</label>
+            <textarea
+              id="mensaje"
+              placeholder="Introduce aquí tu mensaje..."
+              rows="5"
+              cols="40"
+              required
+            ></textarea>
+          </fieldset>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Visita nuestras redes sociales:</p>
+      <a href="https://facebook.com/" target="_blank"
+        ><img src="./Assets/redes_sociales/facebook.png" alt="Facebook"
+      /></a>
+      <a href="https://twitter.com/" target="_blank"
+        ><img src="./Assets/redes_sociales/twitter.png" alt="Twitter"
+      /></a>
+      <a href="https://instagram.com/" target="_blank"
+        ><img src="./Assets/redes_sociales/instagram.png" alt="Instagram"
+      /></a>
+      <p>Made with ❤ by Javier León</p>
+    </footer>
+  </body>
+</html>
